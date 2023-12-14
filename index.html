@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SRM UNIVERSITY</title> 
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="icon" type="image/ico" href="favicontest.ico" /> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="https://vectorlogoseek.com/wp-content/uploads/2019/03/srm-institute-of-science-and-technology-vector-logo.png" /></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>  
+                    <!--close-icon-->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="blogs.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li> 
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>     
+                <!--menu-icon-->
+            </nav>
+
+            <div class="text-box">
+                <h1>Welcome to SRM UNIVERSITY</h1> 
+                <p>Unlocking Your Potential, Shaping Your Future with Quality Education and Innovative Programs. Unlocking Your Potential, Shaping Your Future with Quality Education and Innovative Programs</p>
+                <a href="about.html" class="hero-btn">Visit Us to Know More</a>
+            </div>
+        </section>
+
+        <!-- Courses -->
+
+        <section class="courses">
+            <h1>Our Programs</h1>
+            <p>Choose from a Wide Range of Academic Offerings</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Undergraduate Programs</h3>
+                    <p>
+                        Our undergraduate programs provide a solid foundation for your future career. With expert faculty and a comprehensive curriculum, we offer a diverse range of majors to suit your interests and aspirations. Join us to
+                        gain the knowledge and skills necessary to excel in your chosen field.
+                    </p>
+                </div>
+
+                <div class="course-col">
+                    <h3>Graduate Programs</h3>
+                    <p>
+                        Take your education to the next level with our rigorous and innovative graduate programs. Whether you're looking to specialize in a particular area or broaden your horizons, our advanced degree options will equip you
+                        with the expertise and experience to thrive in today's competitive professional landscape.
+                    </p>
+                </div>
+
+                <div class="course-col">
+                    <h3>Continuing Education</h3>
+                    <p>
+                        At SRM UNIVERSITY, we believe that learning is a lifelong journey. Our continuing education programs offer flexible and accessible opportunities for professional development and personal enrichment. Stay ahead in
+                        your field, explore new interests, and acquire new skills through our diverse range of courses and workshops. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus -->
+
+        <section class="campus">
+            <h1>Our Global Campus</h1>
+            <p>Discover our Campuses Around the World</p> 
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="https://images.collegedunia.com/public/college_data/images/campusimage/14417843772.jpg" />
+                    <div class="layer">
+                        <h3>CHENNAI</h3> 
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wC-uOOGV2qC999FwRHDg7YLYnlmei8zO0UyT1IJfYiCOtmPxOlEUEZviEYpwBxn_TMM&usqp=CAU" />
+                    <div class="layer">
+                        <h3>UNIVERSITY BUILDING</h3>  
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="data:image/jpeg;base64,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" />
+                    <div class="layer">
+                        <h3>SRM RAMAPURAM</h3> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Experience State-of-the-Art Amenities</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipPdDXbecwU4tdgEtjojtnR7-ipoH2AWDCCUCriS=w408-h270-k-no" />
+                    <h3>Extensive Library</h3>
+                    <p>
+                        Access a vast collection of resources and literature in our world-class library. From printed books to digital archives, our library provides a conducive environment for research, study, and intellectual exploration.
+                    </p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="https://images.shiksha.com/mediadata/images/articles/1662969390phpcObhoM.jpeg" />
+                    <h3>PLACEMENT</h3> 
+                    <p>SRM institute OF SCIENCE AND TECHNOLOGY has concluded its placement drive for the batch 2022-23. The highest package and average package offered stood at INR 57 LPA and INR 7.58 LPA, respectively. Further, a total of 1,153 companies visited the campus for placement and made 8,609 offers to the students during placements 2023. A total of 3,250 high-paying offers were made to the students during SRM University placements 2023.
+
+                        Earlier, a total of 11 students of Allied Health Sciences of SRM Medical College Hospital and Research Centre have been placed at a reputed company in the USA. The salary package offered to these students during SRM placements 2022 stood at USD 72,000 per annum, which stood around INR 59 LPA.
+                        
+                        Earlier, a total of 1,050 companies visited the campus and placed more than 10,000 students in new-age job roles during SRM Institute of Science and Technology placements 2022. Further, SRM highest package offered in 2022 stood at INR 1 crore per annum. In addition, SRM University average package offered to the students of CS and IT departments stood at INR 9.5 LPA. The top recruiters of SRM IST in 2022 included Microsoft, Google, Amazon, HCL, IBM, TCS, etc.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="https://srmus.ac.in/assets/img/student-life/athletics/05-student-life-srmus.jpg" />
+                    <h3>SPORTS FACILITIES</h3>
+                    <p>Sports Facilities Stay active and maintain a healthy lifestyle with our expansive sports facilities. From well-equipped gyms to outdoor fields, we offer a variety of athletic options to cater to your fitness interests and goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+
+        <section class="testimonials">
+            <h1>What Our Students Say</h1>
+            <p>Discover Student Experiences at SRM UNIVERSITY</p>
+
+            <div class="row">
+                <div class="testimonials-col">
+                    <div>
+                        <p>
+                            "SRM UNIVERSITY has been an incredible journey of growth and discovery for me. The supportive faculty, engaging classes, and vibrant campus environment have truly shaped my academic and personal development."
+                        </p>
+                        <h3>ROHIT SHARMA</h3> 
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+
+                <div class="testimonials-col">
+                    <div>
+                        <p>
+                            "The exceptional faculty and challenging coursework at SRM UNIVERSITY have pushed me to new heights. The skills and knowledge I gained here have been invaluable in shaping my career aspirations and preparing me
+                            for the real world."
+                        </p>
+                        <h3>VEDANSH RAI</h3> 
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action -->
+        <section class="cta">
+            <h1>Enroll in Our Online Courses</h1>
+            <a href="contact.html" class="hero-btn">CONTACT US</a>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <h1>About Us</h1>
+            <p>
+                SRM UNIVERSITY is dedicated to providing quality education and fostering intellectual growth. <br />
+                Our institution aims to empower students with knowledge, skills, and values to thrive in a rapidly evolving world.
+            </p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by RITESH ,ANIKET AND VEDANSH</p> 
+        </section>
+
+        <!-- JavaScript for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
